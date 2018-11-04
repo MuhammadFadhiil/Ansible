@@ -1,0 +1,29 @@
+--- Fedora ---
+$ sudo dnf install ansible
+
+--- RHEL and CentOS ---
+$ sudo yum install ansible
+
+--- Ubuntu via Apt ---
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+$ sudo apt-get install ansible
+
+-- Debian viat Apt ---
+tambahkan baris berikut kedalam /etc/apt/sources.list
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main
+kemudian jalankan command dibawah
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+$ sudo apt-get update
+$ sudo apt-get install ansible
+
+--- Gentoo via Portage ---
+$ emerge -av app-admin/ansible
+
+--- FreeBSD via pkg ---
+$ sudo pkg install py27-ansible
+atau
+$ sudo pkg install py36-ansible
+
+
